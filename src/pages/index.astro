@@ -21,6 +21,11 @@ const pageTitle = "Andreas Lindegaard";
 		<h1>{pageTitle}</h1>
 		<p>Dette er min blog</p>
 
-   <Footer />
+   	<Footer />
+	 	<script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('expanded');
+    });
+  	</script>
 	</body>
 </html>
