@@ -22,6 +22,18 @@ const goal = 3;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		  <style>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+
+			 .skill {
+   color: green;
+   font-weight: bold;
+ }
+ 
+    </style>
 	</head>
 	<body>
   
@@ -32,7 +44,7 @@ const goal = 3;
 		<h1>{pageTitle}</h1>
     <p>Dette er min blog som jeg bygger i stackblitz med netlify i et astro framework.</p>
 
-		<p>Here are a few facts about me:</p>
+		<p>Her er nogle fakta om mig:</p>
 <ul>
   <li>My name is {identity.firstName}.</li>
   <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
@@ -42,7 +54,7 @@ const goal = 3;
 </ul>
 <p>My skills are:</p>
 <ul>
-  {skills.map((skill) => <li>{skill}</li>)}
+  {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
 
 {happy && <p>I am happy to be learning Astro!</p>}
