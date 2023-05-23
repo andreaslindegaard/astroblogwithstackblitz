@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 
 const pageTitle = "Om mig";
 
@@ -43,9 +44,7 @@ const textCase = "lowercase";
 	</head>
 	<body>
   
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+ <Navigation />
 
 		<h1>{pageTitle}</h1>
     <p>Dette er min blog som jeg bygger i stackblitz med netlify i et astro framework.</p>
